@@ -1,0 +1,45 @@
+<div id="box-upload">
+  <div class="head">
+    <div class="logo-qi">
+    <img routerLink="/" src="https://qiwise.com.br/sitepad-data/uploads/2023/04/qinsight-logo.png" alt="logo" class="logo">
+    <h1 class="titulo-logo">Qiwise</h1>
+    </div>
+
+    <div class="icone-user">
+      <fa-icon [icon]="faUser" class="icon-user"></fa-icon>
+    </div>
+  </div>
+
+  <div class="head-inf">
+  <div class="titulo-head">
+    <h2>Meus arquivos</h2>
+  </div>
+  <div class="manipular-arquivos">
+    <div class="btn-escolher-arquivo">
+    <form>
+    <label for="arquivo" class="escolher-arquivo">Escolher Doc.</label>
+    <input type="file" (change)="getFile($event)" name="arquivo" id="arquivo"/>
+    </form>
+  </div>
+<div class="btn-carregar-arquivo">
+<input type="button"  value="Enviar Doc."  (click)="postData(acessToken, file)" class="carregar-arquivo"/>
+</div>
+  </div>
+  </div>
+
+  <div class="tab-arquivos">
+     <table>
+     <tr *ngFor="let file of this.data.medias">
+     <td>
+      <span class="nome-arquivo">{{file.filename}}</span>
+ 
+      <span class="inputs">
+      <button type="button" value="Conversar" class="btn-chat"><fa-icon [icon]="faComment" class="icon-user"></fa-icon></button>
+       <button  (click)="excluir(acessToken,(file._id.$oid))"  type="button" value="Deletar"  class="btn-delete" ><fa-icon [icon]="faTrash" class="icon-user"></fa-icon></button>
+      </span>
+      </td>
+</tr>
+</table>
+</div>
+</div>
+
