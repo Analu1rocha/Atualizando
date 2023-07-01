@@ -5,7 +5,9 @@
   background: #f7e6ff;
   display: flex;
   flex-direction: column;
-  padding: 40px 40px 0px 40px;
+  padding: 20px 40px 30% 40px;
+  height: 100vh;
+
 
 }
 
@@ -86,14 +88,15 @@ input[type="file"]{
 
 .btn-escolher-arquivo{
   margin-top: 15px;
-  margin-right: 40px;
+  padding-bottom: 10px;
+  padding-right: 25px;
   user-select:none;
 }
 
 .escolher-arquivo{
 font-family: 'Nunito', sans-serif;
 letter-spacing: 2px;
-padding:9px;
+padding:9.2px;
 font-size: 16px;
 font-weight: bold;
 cursor: pointer;
@@ -135,10 +138,12 @@ border-radius: 5px;
   margin-top: 40px;
   width: 100%;
   user-select:none;
+  background-color: #f7e6ff;
 }
 
 table{
   width: 100%;
+  background-color: #f7e6ff;
 }
 
 tr{
@@ -148,7 +153,7 @@ tr{
 td {
   user-select:none;
   background-color: #fff;
-  border-left:  #98FB98 solid 4px;
+  border-left:  #8c75eeff solid 4px;
   color: black;
 
   text-indent: 8px;
@@ -164,7 +169,7 @@ td {
 }
 
 td:hover{
-  border-left:   #8c75eeff  solid 4px;
+  border-left:   #98FB98 solid 4px;
 }
 
 .inputs {
@@ -207,13 +212,13 @@ color:#98FB98;
 }
 
 /* Responsividade */
-@media (min-width: 200px) and (max-width: 600px){
+@media (min-width: 200px) and (max-width: 1200px){
 
   #box-upload{
     padding-bottom: 0px;
     padding-top: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .head{

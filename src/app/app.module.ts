@@ -9,6 +9,7 @@ import { NavBarComponent } from './pages/home/nav-bar/nav-bar.component';
 import { ChatComponent } from './pages/home/chat/chat.component';
 import { UploadArquivosComponent } from './pages/upload-arquivos/upload-arquivos.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
